@@ -108,9 +108,6 @@ class LainQuiz extends FrontendComponent
     ];
 
     public function render() {
-        $rows = "";
-        $timestamp = strtotime("now");
-
         $questions_html = "";
         foreach (self::QUESTIONS as $question) {
             if ($question['id'] === 'br') { $questions_html .= "\n<hr>\n"; continue; }
