@@ -1,0 +1,100 @@
+.html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    min-height: calc(100vh - 2rem);
+    background: repeating-linear-gradient(
+            135deg,
+            #050105,
+            #050105 3px,
+            #19001a 3px,
+            #19001a 4px
+    );
+    max-width: 750px;
+    margin: 1rem auto;
+    color: white;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, label, input {
+    font-family: monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #7DD081;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:hover, a:focus {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+h1 {
+    margin: 0 0 1rem 0;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+}
+
+h2 {
+    margin: 2rem 0 1rem 0;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+}
+
+small {
+    letter-spacing: 0;
+    word-spacing: -3px;
+    color: grey;
+    font-size: x-small;
+}
+
+hr {
+    width: 50%;
+    margin: 0 0 18px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label.question-text {
+    display: block;
+}
+
+input[type='checkbox'], input[type='radio'] {
+    margin-right: 5px;
+}
+
+input[type='submit'] {
+    background: black;
+    color: white;
+}
+
+.question {
+    overflow-y: hidden;
+    transition: max-height 0.75s ease-out;
+    margin-bottom: 1rem;
+}
+
+.relevant {
+    max-height: 80px;
+}
+
+.irrelevant {
+    max-height: 0;
+    margin: 0;
+}

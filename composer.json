@@ -1,0 +1,27 @@
+{
+  "name": "l41rx/basedsissyhypno",
+  "type": "website",
+  "description": "Website for pornography!",
+  "keywords": ["L41rx", "based", "sissy", "hypno"],
+  "homepage": "https://basedsissyhypno.duckdns.org",
+  "authors": [
+    {
+      "name": "L41rx",
+      "email": "l41rx@protonmail.com",
+      "homepage": "https://l41rx.duckdns.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "symfony/cache": "^5.0",
+    "ext-simplexml": "*",
+    "ext-libxml": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "L41rx\\Layer\\": "src"
+    }
+  }
+}
