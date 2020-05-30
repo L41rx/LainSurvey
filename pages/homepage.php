@@ -10,11 +10,12 @@ $lain_quiz = new LainQuiz([]);
 <html lang="en">
 <!-- html :) -->
 <head>
-    <h1>Lain survey</h1>
     <link rel="stylesheet" href="/css/layout.css">
+    <title>Lain survey</title>
 </head>
 <body>
 <!-- site -->
+<h1>Lain survey</h1>
 <?php echo $lain_quiz->render(); ?>
 
 <script>
